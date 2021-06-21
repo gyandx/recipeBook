@@ -1,0 +1,36 @@
+<!-- <a class="list-group-item clearfix" style="cursor: pointer;" (click)="getRecipeDetails()">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">
+      {{ singleRecipe.name }}
+    </h4>
+    <p class="list-group-item-text">
+      {{ singleRecipe.description }}
+    </p>
+  </div>
+  <span class="pull-right">
+    <img
+      [src]="singleRecipe.imagePath"
+      alt="{{ singleRecipe.name }}"
+      class="img-responsive"
+      style="max-height: 50px"
+    />
+  </span>
+</a> -->
+<a class="list-group-item clearfix" style="cursor: pointer;" routerLink="{{recipeId}}" routerLinkActive="active">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">
+      {{ singleRecipe.name }}
+    </h4>
+    <p class="list-group-item-text">
+      {{ singleRecipe.description }}
+    </p>
+  </div>
+  <span class="pull-right">
+    <img
+      [src]="singleRecipe.imagePath"
+      alt="{{ singleRecipe.name }}"
+      class="img-responsive"
+      style="max-height: 50px"
+    />
+  </span>
+</a>
